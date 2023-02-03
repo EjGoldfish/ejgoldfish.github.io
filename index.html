@@ -2,44 +2,94 @@
 <html>
 
 <head>
+
+  <meta name="viewport" content="width=device-width, inital-scale=1">
   <style>
-    h2 {
-      font-family: Courier;
-    }
-
-    .column {
-      float: left;
-      width: 66.66%;
-      text-align: center;
-    }
-
-    .column2 {
-      float: right;
-      width: 33.33%;
-      text-align: center;
-    }
-
-    .button {
-      display: inline-block;
-      width: 45%;
-      height: 250px;
-      width: 250px;
-      background-size: cover;
-      margin: 5px;
-      border-radius: 50%;
-    }
-
     /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
 
     /* Responsive layout - makes the menu and the right column stack on top of each other */
+    @media (min-width: 600px) {
+      .column {
+        width: 100%;
+      }
+
+      .row2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+
+      .column3 {
+        background-color: palevioletred;
+        border: 5px solid white;
+        float: left;
+        width: 45%;
+        text-align: center;
+        border-radius: 10%;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      h2 {
+        font-family: Courier;
+      }
+
+      .column {
+        float: left;
+        width: 66.66%;
+        text-align: center;
+      }
+
+      .column2 {
+        float: right;
+        width: 33.33%;
+        text-align: center;
+      }
+
+      .button {
+        display: inline-block;
+        width: 45%;
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        margin: 5px;
+        border-radius: 50%;
+      }
+    }
+
     @media (max-width: 600px) {
       .column {
         width: 100%;
+      }
+
+      .row2 {
+        align-items: center;
+      }
+
+      .column3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 5%;
+        width: 5%;
+      }
+
+      h2 {
+        font-family: Courier;
+        font-size: large;
+      }
+
+      p1 {
+        font-size: medium;
+      }
+      .test2{
+        margin-left: 60px;
       }
     }
 
@@ -47,18 +97,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 60px;
+      margin-bottom: 10px;
     }
 
     .column3 {
       background-color: palevioletred;
       border: 5px solid white;
       float: left;
-      width: 45%;
       text-align: center;
+      width: 45%;
       border-radius: 10%;
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-bottom: 50px;
     }
   </style>
 </head>
@@ -66,9 +115,10 @@
 <body style="background-color:pink;">
   <div class="row">
     <div class="column">
-      <img src="https://drive.google.com/uc?export=view&id=18PicYnQJD3oPo70aqpmwWmMmI2eJ7_iI" alt="Center Image"
+      <img class="test2" src="https://drive.google.com/uc?export=view&id=18PicYnQJD3oPo70aqpmwWmMmI2eJ7_iI" alt="Center Image"
         style="width:65%; margin-top: 30px;">
-      <p style="text-align:center; font:bold; color: black; font-size: 50; border:0ch;">Custom made clothing by the amazing Catherine Nicholas</p>
+      <p style="text-align:center; font:bold; color: black; font-size: 50; border:0ch;">Custom made clothing by the
+        amazing Catherine Nicholas</p>
       <div style="display:flex;justify-content:space-evenly;">
         <div style="display:flex;flex-direction:column;align-items:center;">
           <img src="https://drive.google.com/uc?export=view&id=1yMKppB4nUlSV38CUgaJEfhG8LbnrYU9D" alt="Facebook Logo"
@@ -127,11 +177,11 @@
     </div>
     <div class="column2">
       <div id="slideshow" style="margin-left: 43px; display: block;">
-        <img src="https://drive.google.com/uc?export=view&id=1i5KrBvtbZ3p_ylB7JeHTdbG4o3GsuSYn" alt="Image 1"
+        <img class = "test" src="https://drive.google.com/uc?export=view&id=1i5KrBvtbZ3p_ylB7JeHTdbG4o3GsuSYn" alt="Image 1"
           style="width:88%; height:auto;">
-        <img src="https://drive.google.com/uc?export=view&id=1UyULzn8hh0SDw5RWWdXu4rg0Bpy8-l00" alt="Image 2"
+        <img class = "test" src="https://drive.google.com/uc?export=view&id=1UyULzn8hh0SDw5RWWdXu4rg0Bpy8-l00" alt="Image 2"
           style="width:88%; height:auto;">
-        <img src="https://drive.google.com/uc?export=view&id=1o9pHyUz3gUBCv0foTCALyZY-6nfmUNEM" alt="Image 3"
+        <img class = "test" src="https://drive.google.com/uc?export=view&id=1o9pHyUz3gUBCv0foTCALyZY-6nfmUNEM" alt="Image 3"
           style="width:88%; height:auto;">
       </div>
     </div>
