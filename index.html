@@ -2,236 +2,218 @@
 <html>
 
 <head>
-    <title>Custom By Catherine</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./docs/assets/Icon.png" />
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <style>
-        /* Clear floats after the columns */
+  <title>Custom By Catherine</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./docs/assets/Icon.png" />
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <style>
+    /* Clear floats after the columns */
 
-        /* Responsive layout - makes the menu and the right column stack on top of each other */
-        @media (min-width: 1001px) {
-            .column {
-                width: 100%;
-            }
+    /* Responsive layout - makes the menu and the right column stack on top of each other */
+    @media (min-width: 1001px) {
+      .column {
+        width: 100%;
+      }
 
-            .row2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 10px;
-            }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-            .column3 {
-                background-color: palevioletred;
-                border: 5px solid white;
-                float: left;
-                text-align: center;
-                width: 45%;
-                /* height: 135px; removed */
-                border-radius: 10%;
-                margin-bottom: 40px;
-                margin-left: 40px;
-                margin-right: 40px;
-            }
+      h2 {
+        font-family: Courier;
+      }
 
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
+      .column {
+        float: left;
+        width: 66.66%;
+        text-align: center;
+      }
 
-            h2 {
-                font-family: Courier;
-            }
+      .column2 {
+        float: right;
+        width: 33.33%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-            .column {
-                float: left;
-                width: 66.66%;
-                text-align: center;
-            }
+      .test2 {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
 
-            .column2 {
-                float: right;
-                width: 33.33%;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+      .header {
+        font-size: x-large;
+      }
+    }
 
-            .column4 {
-                display: none;
-            }
+    @media (max-width: 1000px) {
+      .column {
+        width: 100%;
+      }
 
-            .test2 {
-                width: 90%;
-                height: auto;
-                margin: 0 auto;
-                display: block;
-            }
-            .header{
-                font-size:x-large;
-            }
-        }
+      h2 {
+        font-family: Courier;
+        font-size: large;
+      }
 
-        @media (max-width: 1000px) {
-            .column {
-                width: 100%;
-            }
+      .column2 {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-            .column3 {
-                background-color: palevioletred;
-                border: 5px solid white;
-                float: left;
-                text-align: center;
-                width: 45%;
-                /* height: 165px; removed */
-                border-radius: 10%;
-                margin-bottom: 10px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
+      .test2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
 
-            h2 {
-                font-family: Courier;
-                font-size: large;
-            }
+      .header {
+        font-size: small;
+      }
+    }
 
-            .column2 {
-                float: left;
-                width: 100%;
-                text-align: center;
-                margin-top: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+    .slideshow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-            .row2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 1px;
-            }
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-            .test2 {
-                width: 100%;
-                height: auto;
-                margin: 0 auto;
-                display: block;
-            }
-            .header{
-                font-size:small;
-            }
-        }
+    .column5 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 100%;
+      align-items: center;
 
-        .slideshow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    }
 
-        .slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    .row10 {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      height: 100%;
+    }
+
+    .column3 {
+      background-color: palevioletred;
+      border: 5px solid white;
+      float: left;
+      text-align: center;
+      height: 22.22%;
+      width: 75%;
+      /* height: 135px; removed */
+      border-radius: 10%;
+      margin-bottom: 50px;
+      margin-right: 50px;
+      margin-left: 50px;
+      flex: 1;
+    }
+
+    .row5 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  </style>
 </head>
 
 <body style="background-color:pink;">
-    <div class="row">
-        <div class="column">
-            <img class="test2" src="./docs/assets/Custom By Catherine Title.png"
-                alt="Center Image" style="margin-top: 30px;">
-            <p class="header" style="text-align:center; font:bold; color: black; border:0ch;">Custom made clothing by
-                the amazing Catherine Nicholas</p>
-            <div style="display:flex;justify-content:space-evenly;">
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Facebook_Logo.png"
-                        alt="Facebook Logo" style="width:50px; height:30px;">
-                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                </div>
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Twitter_Logo.png"
-                        alt="Twitter Logo" style="width:30px; height:30px;">
-                    <a href="https://twitter.com/" target="_blank">Twitter</a>
-                </div>
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Instagram_Logo.png"
-                        alt="Instagram Logo" style="width:30px; height:30px;">
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Bras</h2>
-                    <p>Find the perfect fit with our collection of bras in various sizes and styles.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-                <div class="column3">
-                    <h2>Hats</h2>
-                    <p>Protect your head and complete your outfit with our stylish hats.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Pants</h2>
-                    <p>Stay comfortable and stylish with our collection of pants.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-                <div class="column3">
-                    <h2>Shirts</h2>
-                    <p>Stay comfortable and look great with our selection of shirts.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Skirts</h2>
-                    <p>Add some femininity to your wardrobe with our collection of skirts.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-                <div class="column3">
-                    <h2>Underwear</h2>
-                    <p>Stay comfortable all day with our collection of underwear.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-            </div>
+  <div class="column">
+    <row class="row5">
+      <img class="test2" src="./docs/assets/Custom By Catherine Title.png"
+        alt="Center Image" style="margin-top: 30px;">
+      <p class="header" style="text-align:center; font:bold; color: black; border:0ch;">Custom made clothing by
+        the amazing Catherine Nicholas</p>
+      <div style="display:flex;justify-content:space-evenly;">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <img src="./docs/assets/Facebook_Logo.png" alt="Facebook Logo" style="width:50px; height:30px;">
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
         </div>
-        <div class="column2">
-            <div id="slideshow">
-                <div class="slide">
-                    <img class="test" src="./docs/assets/Cat Slide 1.png"
-                        alt="Image 1" style="width:80%; height:auto;">
-                </div>
-                <div class="slide">
-                    <img class="test" src="./docs/assets/Cat Slide 2.png"
-                        alt="Image 3" style="width:80%; height:auto;">
-                </div>
-            </div>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <img src="./docs/assets/Twitter_Logo.png" alt="Twitter Logo" style="width:30px; height:30px;">
+          <a href="https://twitter.com/" target="_blank">Twitter</a>
         </div>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <img src="./docs/assets/Instagram_Logo.png" alt="Instagram Logo" style="width:30px; height:30px;">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <br>
+      <br>
+    </row>
+    <row class="row10">
+      <div class="column5">
+        <div class="column3">
+          <h2>Tops</h2>
+          <p>Protect your head and complete your outfit with our stylish hats.</p>
+          <p><a href="#">Shop now</a></p>
+        </div>
+        <div class="column3">
+          <h2>Bottoms</h2>
+          <p>Stay comfortable and stylish with our collection of pants.</p>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+      <div class="column5">
+        <div class="column3">
+          <h2>Dresses</h2>
+          <p>Stay comfortable and look great with our selection of shirts.</p>
+          <p><a href="#">Shop now</a></p>
+        </div>
+        <div class="column3">
+          <h2>Accessories</h2>
+          <p>Add some femininity to your wardrobe with our collection of skirts.</p>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+    </row>
+  </div>
+  <div class="column2">
+    <div id="slideshow">
+      <div class="slide">
+        <img class="main_slides" src="./docs/assets/Cat Slide 1.png"
+          alt="Image 1" style="width:80%; height:auto;">
+      </div>
+      <div class="slide">
+        <img class="main_slides" src="./docs/assets/Cat Slide 2.png"
+          alt="Image 3" style="width:80%; height:auto;">
+      </div>
     </div>
-    <script>
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementById("slideshow").getElementsByTagName("img");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementById("slideshow").getElementsByClassName("main_slides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
 </body>
 
 </html>
