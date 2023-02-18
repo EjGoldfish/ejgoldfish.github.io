@@ -434,82 +434,62 @@
         const img6 = document.getElementById("bottom1");
         const img7 = document.getElementById("top2");
         const img8 = document.getElementById("bottom2");
-        if (screen.width > 1000) {
-            img1.addEventListener("click", function () {
-                if (top_count <= 2) {
-                    top_count--;
-                }
-                if (top_count == 0) {
-                    top_count = 2;
-                    img5.style.display = "none";
-                    img7.style.display = "flex";
-                }
-                else if (top_count == 1) {
-                    img5.style.display = "flex";
-                    img7.style.display = "none";
-                }
-            });
-            img2.addEventListener("click", function () {
-                if (bottom_count <= 2) {
-                    bottom_count--;
-                }
-                if (bottom_count == 0) {
-                    bottom_count = 2;
-                    img6.style.display = "none";
-                    img8.style.display = "flex";
-                }
-                else if (bottom_count == 1) {
-                    img6.style.display = "flex";
-                    img8.style.display = "none";
-                }
-            });
-            img3.addEventListener("click", function () {
-                if (top_count <= 2) {
-                    top_count++;
-                }
-                if (top_count == 3) {
-                    top_count = 1;
-                    img5.style.display = "flex";
-                    img7.style.display = "none";
-                }
-                else if (top_count == 2) {
-                    img5.style.display = "none";
-                    img7.style.display = "flex";
-                }
-            });
-            img4.addEventListener("click", function () {
-                if (bottom_count <= 2) {
-                    bottom_count++;
-                }
-                if (bottom_count == 3) {
-                    bottom_count = 1;
-                    img6.style.display = "flex";
-                    img8.style.display = "none";
-                }
-                else if (bottom_count == 2) {
-                    img6.style.display = "none";
-                    img8.style.display = "flex";
-                }
-            });
-        }
-        else {
-            img1.addEventListener("click", function () {
-                img1.style.display = "none";
-                img2.style.display = "flex";
-                img3.style.display = "flex";
-                img4.style.display = "flex";
-                img5.style.display = "flex";
-                img6.style.display = "flex";
-            });
-            img2.addEventListener("click", function () {
-                img1.style.display = "flex";
-                img2.style.display = "none";
-                img3.style.display = "none";
-                img4.style.display = "none";
+        img1.addEventListener("click", function () {
+            if (top_count <= 2) {
+                top_count--;
+            }
+            if (top_count == 0) {
+                top_count = 2;
                 img5.style.display = "none";
+                img7.style.display = "flex";
+            }
+            else if (top_count == 1) {
+                img5.style.display = "flex";
+                img7.style.display = "none";
+            }
+        });
+        img2.addEventListener("click", function () {
+            if (bottom_count <= 2) {
+                bottom_count--;
+            }
+            if (bottom_count == 0) {
+                bottom_count = 2;
                 img6.style.display = "none";
-            });
-        }
+                img8.style.display = "flex";
+            }
+            else if (bottom_count == 1) {
+                img6.style.display = "flex";
+                img8.style.display = "none";
+            }
+        });
+        img3.addEventListener("click", function () {
+            if (top_count <= 2) {
+                top_count++;
+            }
+            if (top_count == 3) {
+                top_count = 1;
+                img5.style.display = "flex";
+                img7.style.display = "none";
+            }
+            else if (top_count == 2) {
+                img5.style.display = "none";
+                img7.style.display = "flex";
+            }
+        });
+        img4.addEventListener("click", function () {
+            if (bottom_count <= 2) {
+                bottom_count++;
+            }
+            if (bottom_count == 3) {
+                bottom_count = 1;
+                img6.style.display = "flex";
+                img8.style.display = "none";
+            }
+            else if (bottom_count == 2) {
+                img6.style.display = "none";
+                img8.style.display = "flex";
+            }
+        });
     </script>
 </body>
 
