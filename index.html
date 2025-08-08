@@ -1,237 +1,283 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Custom By Catherine</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./docs/assets/Icon.png" />
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <style>
-        /* Clear floats after the columns */
-
-        /* Responsive layout - makes the menu and the right column stack on top of each other */
-        @media (min-width: 1001px) {
-            .column {
-                width: 100%;
-            }
-
-            .row2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 10px;
-            }
-
-            .column3 {
-                background-color: palevioletred;
-                border: 5px solid white;
-                float: left;
-                text-align: center;
-                width: 45%;
-                /* height: 135px; removed */
-                border-radius: 10%;
-                margin-bottom: 40px;
-                margin-left: 40px;
-                margin-right: 40px;
-            }
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            h2 {
-                font-family: Courier;
-            }
-
-            .column {
-                float: left;
-                width: 66.66%;
-                text-align: center;
-            }
-
-            .column2 {
-                float: right;
-                width: 33.33%;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .column4 {
-                display: none;
-            }
-
-            .test2 {
-                width: 90%;
-                height: auto;
-                margin: 0 auto;
-                display: block;
-            }
-            .header{
-                font-size:x-large;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            .column {
-                width: 100%;
-            }
-
-            .column3 {
-                background-color: palevioletred;
-                border: 5px solid white;
-                float: left;
-                text-align: center;
-                width: 45%;
-                /* height: 165px; removed */
-                border-radius: 10%;
-                margin-bottom: 10px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-            h2 {
-                font-family: Courier;
-                font-size: large;
-            }
-
-            .column2 {
-                float: left;
-                width: 100%;
-                text-align: center;
-                margin-top: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .row2 {
-                display: flex;
-                align-items: stretch;
-                justify-content: center;
-                margin-bottom: 1px;
-            }
-
-            .test2 {
-                width: 100%;
-                height: auto;
-                margin: 0 auto;
-                display: block;
-            }
-            .header{
-                font-size:small;
-            }
-        }
-
-        .slideshow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom by Catherine - Handmade Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Custom by Catherine</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<body style="background-color:pink;">
-    <div class="row">
-        <div class="column">
-            <img class="test2" src="./docs/assets/Custom By Catherine Title.png"
-                alt="Center Image" style="margin-top: 30px;">
-            <p class="header" style="text-align:center; font:bold; color: black; border:0ch;">Custom made clothing by
-                the amazing Catherine Nicholas</p>
-            <div style="display:flex;justify-content:space-evenly;">
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Facebook_Logo.png"
-                        alt="Facebook Logo" style="width:50px; height:30px;">
-                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Handcrafted Fashion<br><span>Made Just for You</span></h1>
+            <p>Discover unique, custom-made clothing pieces that reflect your personal style and personality.</p>
+            <a href="#collection" class="cta-button">Explore Collection</a>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="float-item">✨</div>
+                <div class="float-item">🧵</div>
+                <div class="float-item">✂️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Mannequin Section -->
+    <section id="collection" class="mannequin-section">
+        <div class="container">
+            <h2>Mix & Match Collection</h2>
+            <p class="section-subtitle">Click the arrows to explore different combinations</p>
+            
+            <div class="mannequin-container">
+                <!-- Mannequin Display -->
+                <div class="mannequin-display">
+                    <div class="mannequin-base">
+                        <svg viewBox="0 0 200 400" class="mannequin-svg">
+                            <!-- Mannequin silhouette -->
+                            <path d="M100 20 C110 20 120 30 120 40 L120 60 C130 65 140 75 140 90 L140 180 C140 190 135 200 130 210 L130 280 C130 290 125 300 120 310 L120 380 C120 390 110 400 100 400 C90 400 80 390 80 380 L80 310 C75 300 70 290 70 280 L70 210 C65 200 60 190 60 180 L60 90 C60 75 70 65 80 60 L80 40 C80 30 90 20 100 20 Z" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
+                        </svg>
+                        
+                        <!-- Clothing Layers -->
+                        <div class="clothing-layer" id="tops-layer">
+                            <img src="" alt="Top" class="clothing-item" id="current-top">
+                        </div>
+                        <div class="clothing-layer" id="bottoms-layer">
+                            <img src="" alt="Bottom" class="clothing-item" id="current-bottom">
+                        </div>
+                    </div>
                 </div>
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Twitter_Logo.png"
-                        alt="Twitter Logo" style="width:30px; height:30px;">
-                    <a href="https://twitter.com/" target="_blank">Twitter</a>
-                </div>
-                <div style="display:flex;flex-direction:column;align-items:center;">
-                    <img src="./docs/assets/Instagram_Logo.png"
-                        alt="Instagram Logo" style="width:30px; height:30px;">
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+                <!-- Controls -->
+                <div class="mannequin-controls">
+                    <div class="control-group">
+                        <h3>Tops</h3>
+                        <div class="control-buttons">
+                            <button class="nav-btn" onclick="previousItem('tops')">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <span class="item-counter" id="tops-counter">1 / 4</span>
+                            <button class="nav-btn" onclick="nextItem('tops')">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <p class="item-name" id="tops-name">Elegant Blouse</p>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>Bottoms</h3>
+                        <div class="control-buttons">
+                            <button class="nav-btn" onclick="previousItem('bottoms')">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <span class="item-counter" id="bottoms-counter">1 / 4</span>
+                            <button class="nav-btn" onclick="nextItem('bottoms')">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <p class="item-name" id="bottoms-name">Classic Trousers</p>
+                    </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Tops</h2>
-                    <p>Find the perfect fit with our collection of bras in various sizes and styles.</p>
-                    <p><a href="#">Shop now</a></p>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <h3>Custom Blouses</h3>
+                    <p>Handcrafted with premium fabrics</p>
+                    <span class="price">From $85</span>
                 </div>
-                <div class="column3">
-                    <h2>Bottoms</h2>
-                    <p>Protect your head and complete your outfit with our stylish hats.</p>
-                    <p><a href="#">Shop now</a></p>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <h3>Tailored Pants</h3>
+                    <p>Perfect fit, premium quality</p>
+                    <span class="price">From $120</span>
                 </div>
-            </div>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Dresses</h2>
-                    <p>Stay comfortable and stylish with our collection of pants.</p>
-                    <p><a href="#">Shop now</a></p>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-female"></i>
+                        </div>
+                    </div>
+                    <h3>Custom Dresses</h3>
+                    <p>Unique designs for special occasions</p>
+                    <span class="price">From $200</span>
                 </div>
-                <div class="column3">
-                    <h2>Hair Ties</h2>
-                    <p>Stay comfortable and look great with our selection of shirts.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="column3">
-                    <h2>Scarves</h2>
-                    <p>Add some femininity to your wardrobe with our collection of skirts.</p>
-                    <p><a href="#">Shop now</a></p>
-                </div>
-                <div class="column3">
-                    <h2>Hats</h2>
-                    <p>Stay comfortable all day with our collection of underwear.</p>
-                    <p><a href="./docs/beta.html">Shop now</a></p>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                    </div>
+                    <h3>Alterations</h3>
+                    <p>Professional fitting services</p>
+                    <span class="price">From $25</span>
                 </div>
             </div>
         </div>
-        <div class="column2">
-            <div id="slideshow">
-                <div class="slide">
-                    <img class="test" src="./docs/assets/Cat Slide 1.png"
-                        alt="Image 1" style="width:80%; height:auto;">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Catherine</h2>
+                    <p>With over a decade of experience in fashion design and tailoring, Catherine brings passion and precision to every piece she creates. Each garment is carefully crafted with attention to detail and a commitment to quality that ensures you'll love wearing it for years to come.</p>
+                    <p>From concept to completion, every piece is made with love, using sustainable practices and premium materials sourced from trusted suppliers.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainable Materials</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img class="test" src="./docs/assets/Cat Slide 2.png"
-                        alt="Image 3" style="width:80%; height:auto;">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>Catherine's Photo</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementById("slideshow").getElementsByTagName("img");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to create something beautiful together?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>catherine@custombycatherine.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 9AM-6PM<br>Sat: 10AM-4PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="custom-design">Custom Design</option>
+                            <option value="alterations">Alterations</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Custom by Catherine</h3>
+                    <p>Handcrafted fashion made just for you.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Custom Design</a></li>
+                        <li><a href="#">Alterations</a></li>
+                        <li><a href="#">Consultations</a></li>
+                        <li><a href="#">Fittings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Custom by Catherine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
